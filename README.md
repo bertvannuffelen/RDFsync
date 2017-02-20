@@ -42,3 +42,10 @@ A SCP connection is being created between the producing and the recieving machin
 2. run $INSTALL_DIR/config/start.sh
 3. apply the Virtuoso configuration 
 4. test
+5. activate a cron job on reviewer and producer to initiate and to recieve the data. The cron-job of the producer can be set to every minute.
+
+
+## Limitations
+
+ * The reciever loading is the bottleneck. A new upload cannot be started before the loading has finished. On larger dumps the loading can take an substantial amount of time, making the loading being paced by this speed.
+
