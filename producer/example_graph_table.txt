@@ -1,0 +1,2 @@
+file1.ttl http://test.com/file1.ttl
+file2.ttl http://test.com/file2.ttl
