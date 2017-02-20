@@ -1,12 +1,15 @@
 #!/bin/sh
 
-for i in $(find ../producer) 
+BIN=.
+
+for i in $(find ../../producer) 
 do 
-/config/bin/replace-env.sh $i
+	echo $i
+	$BIN/replace-env.sh $i
 done
 
-for i in $(find ../reciever) 
+for i in $(find ../../receiver) 
 do 
-/config/bin/replace-env.sh $i
+	$BIN/replace-env.sh $i
 done
 
