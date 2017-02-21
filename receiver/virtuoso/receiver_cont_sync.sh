@@ -25,7 +25,7 @@ then
 
 	    $INSTALLDIR/transferdumps.sh
 
-	    scp ENV_INSTALL_DIR/producer/sync ENV_TARGET:ENV_TARGET_DIR
+	    scp ENV_INSTALL_DIR/producer/sync ENV_SCP_TARGET:ENV_SCP_TARGET_DIR
 	    echo "done" ;
 	    rm -f ENV_WORK_DIR/receiving
     fi
