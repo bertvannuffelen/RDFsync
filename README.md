@@ -23,8 +23,7 @@ A SCP connection is being created between the producing and the recieving machin
 | ENV_SCP_TARGET_DIR | The directory where the reciever expects the files to be copied to by the producer | |
 | ENV_SCP_TARGET | The user and machine used for the copying | |
 | ENV_TARGET_SYNC_DIR | The directory where the reciever expects the sync token to be copied to by the producer | |
-| ENV_TARGET | | |
-| ENV_WORK_DIR | |
+| ENV_WORK_DIR | The directory where the reciever checks the sync tokens | |
 | ENV_INSTALL_DIR | the directory in which this repository is checked out | |
 | ENV_VIRTUOSO_DUMP_DIR | The directory where Virtuoso is dumping the data as files to. | |
 | ENV_VIRTUOSO_UPLOAD_DIR | The directory where Virtuoso is reading from (a receiver)  | |
@@ -34,6 +33,7 @@ A SCP connection is being created between the producing and the recieving machin
 ### Virtuoso Configuration
  * Ensure that the ENV_VIRTUOSO_DUMP_DIR and ENV_VIRTUOSO_UPLOAD_DIR are part of the DirsAllowed directive.
  * Ensure that the execute_isql.sh script is properly configured
+
 
 
 ## deployment
