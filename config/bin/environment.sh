@@ -5,7 +5,7 @@ export ENV_INSTALL_DIR=
 
 export ENV_RESULTS_GRAPHS_DIR=$ROOTDIR/results/graph
 export ENV_RESULTS_DIR=$ROOTDIR/results
-export ENV_SCP_TARGET_DIR=$ROOTDIR/virtuoso/upload
+export ENV_SCP_TARGET_DIR=$TARGETDIR/virtuoso/upload
 export ENV_SCP_TARGET=user@target_machine
 export ENV_TARGET_SYNC_DIR=$TARGETDIR/syncdir
 export ENV_WORK_DIR=$ENV_TARGET_SYNC_DIR
