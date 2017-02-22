@@ -38,11 +38,26 @@ A SCP connection is being created between the producing and the recieving machin
 
 ## deployment
 
-1. git clone this repository into $INSTALL_DIR .
-2. run $INSTALL_DIR/config/start.sh
-3. apply the Virtuoso configuration 
-4. test
-5. activate a cron job on reviewer and producer to initiate and to recieve the data. The cron-job of the producer can be set to every minute.
+### On producer machine
+
+1. git clone this repository into $ENV_INSTALL_DIR and configure $ENV_INSTALL_DIR/config/environment.sh
+2  export ENV_INSTALL_DIR=
+3. run $ENV_INSTALL_DIR/config/start.sh
+
+
+### On reciever machine
+
+1. git clone this repository into $ENV_INSTALL_DIR and configure $ENV_INSTALL_DIR/config/environment.sh
+2  export ENV_INSTALL_DIR=
+3. run $ENV_INSTALL_DIR/config/start.sh
+4. apply the Virtuoso configuration 
+   4.1. when using a docker container for Virtuoso ensure that the directory are shared with the Virtuoso. 
+   4.2. when using a docker container for Virtuoso ensure that execute_isql is properly configured
+
+### test
+
+5. test with some dummy files
+6. activate a cron job on reviewer and producer to initiate and to recieve the data. The cron-job of the producer can be set to every minute.
 
 
 ## Limitations
