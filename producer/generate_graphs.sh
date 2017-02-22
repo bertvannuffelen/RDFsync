@@ -6,12 +6,12 @@
 #  <file> <graph>
 
 
-mkdir -p ENV_UVRESULTS_GRAPHS_DIR
+mkdir -p ENV_RESULTS_GRAPHS_DIR
 
 while read line ; 
 do
 	file=`echo $line | sed "s/\(.*\) .*/\1/g" `
 	graph=`echo $line | sed "s/.* \(.*\)/\1/g" `
         
-	echo $graph > ENV_UVRESULTS_GRAPHS_DIR/$file.graph
+	echo $graph > ENV_RESULTS_GRAPHS_DIR/$file.graph
 done < $1
