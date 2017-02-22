@@ -1,16 +1,17 @@
 
-ROOTDIR=
-ENV_INSTALL_DIR=
+export ROOTDIR=
+export TARGETDIR=
+export ENV_INSTALL_DIR=
 
-ENV_RESULTS_GRAPHS_DIR=$ROOTDIR/results/graph
-ENV_RESULTS_DIR=$ROOTDIR/results
-ENV_SCP_TARGET_DIR=$ROOTDIR/virtuoso/upload
-ENV_SCP_TARGET=user@target_machine
-ENV_TARGET_SYNC_DIR=$ROOTDIR/syncdir
-ENV_WORK_DIR=$ENV_TARGET_SYNC_DIR
-ENV_VIRTUOSO_DUMP_DIR=$ROOTDIR/virtuoso/dump
-ENV_VIRTUOSO_UPLOAD_DIR=$ROOTDIR/virtuoso/upload
-ENV_VIRTUOSO_DEFAULT_GRAPH="http://tenforce.com/id/dataset/default"
+export ENV_RESULTS_GRAPHS_DIR=$ROOTDIR/results/graph
+export ENV_RESULTS_DIR=$ROOTDIR/results
+export ENV_SCP_TARGET_DIR=$ROOTDIR/virtuoso/upload
+export ENV_SCP_TARGET=user@target_machine
+export ENV_TARGET_SYNC_DIR=$TARGETDIR/syncdir
+export ENV_WORK_DIR=$ENV_TARGET_SYNC_DIR
+export ENV_VIRTUOSO_DUMP_DIR=$ROOTDIR/virtuoso/dump
+export ENV_VIRTUOSO_UPLOAD_DIR=$TARGETDIR/virtuoso/upload
+export ENV_VIRTUOSO_DEFAULT_GRAPH="http://tenforce.com/id/dataset/default"
 
 mkdir -p $ENV_RESULTS_GRAPHS_DIR
 mkdir -p $ENV_RESULTS_DIR

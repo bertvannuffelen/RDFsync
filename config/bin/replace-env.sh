@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 #
 # apply all substitutions for the ENV variables 
 # 
@@ -7,7 +7,7 @@
 FILE=$1
 
 # source the environmental variable defaults 
-source environment.sh
+source $ENV_INSTALL_DIR/config/bin/environment.sh
 
 #: ${ENV_LDSB_SERVICE_URL:=http://ldsb-service:81}
 #: ${ENV_SUBJECTPAGES_SERVICE_URL:-http://subjectpages-service}
